@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>LLR Registration Form</h1>
+    <form action="main.py" method="post">
+        <label for="name" name="Username" id="name">Username:           
+        </label>
+        <input type="name" name="Username" id="name" placeholder="Enter Your Name"><br><br>
+        
+        <label for="Age" name="age" id="age">Age:</label>
+        <input type="Number" name="age" id="Age" placeholder="Enter your Age"><br><br>
+
+        <label for="DOB" name="date" id="date">Date of Birth:</label>
+        <input type="date" name="date" id="DOB" ><br><br>
+
+        <label for="Email" name="email" id="email">Email</label>
+        <input type="email" name="email" id="Email" ><br>
+
+        <p>Select Gender:</Select></p>
+        <input type="radio" name="Male" id="M">
+        <label for="M" name="Male" id="">Male</label>
+        <input type="radio" name="Female" id="F">
+        <label for="F" name="Female" id="">Female</label>
+
+        <p>Type of Vehicles:</p>
+        <input type="checkbox" name="two" id="two">
+        <label for="two" name="wheels2" id="wheels2">2 Wheeler</label>
+        <input type="checkbox" name="four" id="four">
+        <label for="four" name="wheels4" id="wheels4">4 Wheeler</label>
+
+        <p>Vehicles:</p>
+        <select name="Vehicles" id="Vehicles" placeholder="Select type of vehicle">
+            <optgroup label="2Wheeler" >
+                <option value="KTM Duke">KTM Duke</option>
+                <option value="Tvs Apache">vs Apache</option>
+                <option value="Honda Shine">Honda Shine</option>
+                <option value="Bajaj Platina">Bajaj Platina</option>
+            </optgroup>
+            <optgroup label="4Wheeler">
+                <option value="Ford car">Ford car</option>
+                <option value="Nissan car">Nissan car</option>
+                <option value="Honda Car">Honda Car</option>
+                <option value="Cardilac car">Cardilac ca</option>
+            </optgroup>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
