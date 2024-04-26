@@ -1,0 +1,31 @@
+.main{
+    
+   display: grid;
+   column-gap: 10px;
+   row-gap: 10px;
+    height: 200px;
+    width: 200px;
+    border: 1px solid;
+    grid-template-areas: "a a"
+                         "b b" ;
+}
+
+.box{
+    background-color: red;
+    border: 1px solid white;
+      
+    
+}
+.first
+{
+    grid-area: a;
+    
+}
+.second
+{
+    grid-area: b;
+}
+.third
+{
+    grid-area: c;
+}

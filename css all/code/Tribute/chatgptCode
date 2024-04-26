@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <link rel="stylesheet" href="./chapgpt.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tribute to [Name]</h1>
+        </header>
+        <main>
+            <figure>
+                <img src="image.jpg" alt="Tribute Image">
+            </figure>
+            <section>
+                <h2>About [Name]</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus euismod lorem, vel aliquam lectus dignissim id. Suspendisse potenti. Fusce non quam ut neque consequat feugiat. Integer sed nisi vel leo fermentum consequat vitae a lorem. Duis vitae nisl vel leo tincidunt eleifend. Nullam ultrices dapibus ante, a facilisis odio gravida sed. Nullam eu enim massa. In hac habitasse platea dictumst. Quisque gravida turpis ut nibh finibus ornare.</p>
+                <p>Donec sodales condimentum massa, non rutrum dolor laoreet nec. Vestibulum aliquet, tortor vel ultricies fringilla, neque ex tincidunt est, eu consectetur nulla magna nec dui. Duis porttitor massa sapien, nec sodales ligula rhoncus sit amet. Fusce vel magna non enim rhoncus mattis. Aliquam congue scelerisque velit, sed interdum sem posuere non. Fusce ut mauris nec magna gravida vehicula. Aenean a mi a nulla condimentum convallis.</p>
+            </section>
+            <footer>
+                <p>Source: <a href="https://example.com" target="_blank">Example.com</a></p>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
