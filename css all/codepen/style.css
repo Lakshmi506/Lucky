@@ -6,9 +6,10 @@
 }
 .container
 {
-    width: 100%;
+    width: 60%;
     outline: 4px solid orange;
     aspect-ratio: 1;
+    justify-content: space-around  ;
 }
 .box{
     
@@ -22,9 +23,9 @@
 .box:hover
 {
     background-color: chocolate;
+    height: 150px;    
     
-    
-    transform: translate(100);
+    transform: translatex(100px);
 }
 
 
