@@ -1,0 +1,47 @@
+.page
+{
+    background-color: cornflowerblue;
+    display: grid;
+
+}
+.container
+{
+    width: 100%;
+    outline: 4px solid orange;
+    aspect-ratio: 1;
+}
+.box{
+    
+    height: 100px;
+    width: 100px;
+    background-color: yellowgreen;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+
+}
+.box:hover
+{
+    background-color: chocolate;
+    
+    
+    transform: translate(100);
+}
+
+
+@keyframes move
+{
+    25%
+    {
+        transform: translatex(100px);
+        top: 0px;
+        left: 0px;
+        transform: rotate(100);
+    }
+    50%
+    {
+        transform: translate(100px);
+        top: 100px;
+        left: 100px;
+    }
+}
+
