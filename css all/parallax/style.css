@@ -1,0 +1,78 @@
+body, html{
+	height: 100%;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+}
+
+
+.pimg1{
+	background-image: url('http://i.imgur.com/3A73miq.jpg');
+	min-height: 100%;
+}
+
+.pimg2{
+	background-image: url('http://i.imgur.com/M3HrQyO.jpg');
+	min-height: 400px;
+}
+
+.pimg3{
+	background-image: url('http://i.imgur.com/8rwSKp3.jpg');
+	min-height:400px;
+}
+
+.pimg1, .pimg2, .pimg3{
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 0.70;
+	background-attachment: fixed;
+}
+
+.section{
+	text-align: center;
+	padding : 50px 80px;
+}
+
+.section-light{
+	background-color: #f2f2f2;
+	color: #666;
+}
+
+.section-dark{
+	background-color: #4c4c4c;
+	color: #ddd;
+}
+
+.ptext{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	font-size: 27px;
+	color: #000;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+
+}
+
+.ptext .border{
+	background-color: black;
+	color: #fff;
+	padding: 20px;
+	font-weight: 500;
+}
+
+.ptext .border.trans{
+	background-color: transparent;
+}
+
+@media(max-width : 568px){
+	.pimg1, .pimg2, .pimg{
+		background-attachment: scroll;
+	}
+}
