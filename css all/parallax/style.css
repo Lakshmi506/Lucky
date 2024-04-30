@@ -12,14 +12,9 @@ html,body{
     background-image:url(images/Sunrise-Image.jpg);
     height: 100%;
     width: 100%;
-    position: relative;
+   
 }
-.bird{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%, -50%);
-}
+
 .pimg2
 {
     background-image: url(images/sunset-image.jpg);
