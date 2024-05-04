@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/logo-dark.svg">
+
+    <!-- font awsome -->
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- end -->
+
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- end -->
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:wght@400;600;700&family=Josefin+Sans:wght@300;400;500;600&family=Merriweather&family=Montserrat:wght@400;600;800&family=Noto+Sans:wght@400;600;700&family=Orbitron:wght@400;500;600;800&family=Rowdies:wght@400;700&family=Sacramento&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <!--  -->
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- nav bar -->
+        <header>
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img class="nav-img" src="/images/logo-dark.svg" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Demo
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">
+                                            <i class="fa fa-home drop-icon" aria-hidden="true"></i>
+                                            Real Estate Demo</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="#">
+                                            <i class="fa-solid fa-car-side"></i>
+                                            Car Finder Demo</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="#">
+                                            <i class="fa-solid fa-briefcase"></i>
+                                            Job Board Demo</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="#">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            City Guide Demo</a>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="#">
+                                            <i class="fa fa-home drop-icon" aria-hidden="true"></i>
+                                            Main Page</a>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="#">
+                                            <i class="fa-sharp fa-solid fa-bars"></i>
+                                            Components</a>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <i class="fa-solid fa-file"></i>
+                                            Documentation</a>
+
+
+                                </ul>
+                            </li>
+                            <!-- 2 -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Home
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Home.1</a></li>
+                                    <li><a class="dropdown-item" href="#">Home.2</a></li>
+
+                                </ul>
+                            </li>
+
+                            <!-- 3 -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Catalog
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Property for Rent</a></li>
+                                    <li><a class="dropdown-item" href="#">Property for Sale</a></li>
+                                    <li><a class="dropdown-item" href="#">Signal Property</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- 4 -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Account
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Personal Info</a></li>
+                                    <li><a class="dropdown-item" href="#">Password & Security</a></li>
+                                    <li><a class="dropdown-item" href="#">My Properties</a></li>
+                                    <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                                    <li><a class="dropdown-item" href="#">Reviews</a></li>
+                                    <li><a class="dropdown-item" href="#">Notifications</a></li>
+                                    <li><a class="dropdown-item" href="#">Sign In</a></li>
+                                    <li><a class="dropdown-item" href="#">Sign up</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- 5 -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Vendor
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Add Property</a></li>
+                                    <li><a class="dropdown-item" href="#">Property Promotion</a></li>
+                                    <li><a class="dropdown-item" href="#">Vendor Page: Properties</a></li>
+                                    <li><a class="dropdown-item" href="#">Vendor Page: Reviews</a></li>
+                                </ul>
+                            </li>
+                            <!-- 6 -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Page
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">About</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                                    <li><a class="dropdown-item" href="#">Contact</a></li>
+                                    <li><a class="dropdown-item" href="#">Help Center</a></li>
+                                </ul>
+                            </li>
+                            <!--  -->
+
+                        </ul>
+
+                        <form class="d-flex btn-width">
+                            <button class="btn nav-btn "><i class="fa-regular fa-user nav-btn-icon"></i>Sign in</button>
+                            <button class="btn nav-btn nav-btn-add "><i
+                                    class="fa-solid fa-plus nav-btn-icon"></i>Addproperty</button>
+                        </form>
+
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- nav bar end -->
+
+        <main>
+            <!-- hero section -->
+        
+            <section>
+                <div class="hero-container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+
+                            <div class="hero-text-container">
+                                <h1 class="hero-text">Easy way to find <br> a perfect property</h1>
+                                <p class="hero-text">We provide a complete service for the sale, purchase or rental of
+                                    real
+                                    estate. We have been operating more than 10 years. Search millions of apartments and
+                                    houses on Finder.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="hero-img">
+                                <img src="/images/hero-image.jpg" alt="hero image">
+                            </div>
+                        </div>
+                        <!-- end Text And image -->
+                        <div class="col-lg-6  col-md-12">
+                            <div class="btn-forms row">
+
+                                <div class="col-lg-2 col-md-4 btn-group dropdown">
+                                    <div class="  p-input">
+                                        <button type="button" class="btn  dropdown-toggle drop-btn"
+                                            data-bs-toggle="dropdown">
+
+                                            <span class="text-span">
+                                                <i class="fa fa-home"></i>
+                                                For rent
+                                            </span>
+
+                                        </button>
+                                        <div class="dropdown-menu my-1">
+                                            <a href="#" class="dropdown-item">For rent</a>
+                                            <a href="#" class="dropdown-item">For sale</a>
+                                        </div>
+                                        <span class="v-line simle-line"></span>
+                                    </div>
+                                </div>
+
+                                <!-- 1 -->
+                                <div class="col-lg-2 col-md-4 btn-group dropdown">
+                                    <div class="p-input">
+                                        <button type="button" class="btn  dropdown-toggle drop-btn"
+                                            data-bs-toggle="dropdown">
+
+                                            <span class="text-span">
+                                                <i class="fa fa-map-marker"></i>
+                                                location
+                                            </span>
+
+                                        </button>
+                                        <div class="dropdown-menu my-1">
+                                            <a href="#" class="dropdown-item">For rent</a>
+                                            <a href="#" class="dropdown-item">For sale</a>
+                                        </div>
+                                        <span class="v-line simle-line"></span>
+                                    </div>
+                                </div>
+
+                                <!-- 2 -->
+                                <div class="col-lg-2 col-md-4 btn-group dropdown">
+                                    <div class="p-input">
+                                        <button type="button" class="btn  dropdown-toggle drop-btn"
+                                            data-bs-toggle="dropdown">
+
+                                            <span class="text-span">
+                                                <i class="fa fa-bars"></i>
+                                                Property type
+                                            </span>
+
+                                        </button>
+                                        <div class="dropdown-menu my-1">
+                                            <a href="#" class="dropdown-item">For rent</a>
+                                            <a href="#" class="dropdown-item">For sale</a>
+                                        </div>
+                                        <span class="v-line simle-line"></span>
+                                    </div>
+                                </div>
+
+                                <!-- 3 -->
+                                <div class="col-lg-6 col-md-6 btn-group dropdown range-width">
+
+                                    <div class="drop-btn p-input range-cl">
+                                        <i class="fa fa-money"></i>
+                                        <span class="text-span ">Price</span>
+                                        <input id="myinput" min="0" max="700" type="range" value="30" />
+                                        <button class="drop-btn property-btn"><i class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                        </div>
+                    </div>
+                </div>
+            </Section>
+            <!-- categories -->
+
+            <section class="categories-container">
+                <div class=" display-fle ">
+                    <div class="categories">
+                        <a href="" class="categories-link ">
+                            <div class="categories-items">
+                                <i class="fa fa-home"></i>
+                            </div>
+                            <h3>Houses</h3>
+                        </a>
+                    </div>
+                    <!-- 2 -->
+                    <div class="categories">
+                        <a href="" class="categories-link ">
+                            <div class="categories-items">
+                                <i class="fa fa-building-o"></i>
+                            </div>
+                            <h3>Apartments</h3>
+                        </a>
+                    </div>
+                    <!-- 3 -->
+                    <div class="categories">
+                        <a href="" class="categories-link ">
+                            <div class="categories-items">
+                                <i class="fa fa-shopping-basket"></i>
+                            </div>
+                            <h3>Commerical</h3>
+                        </a>
+                    </div>
+                    <!-- 4 -->
+                    <div class="categories">
+                        <a href="" class="categories-link ">
+                            <div class="categories-items">
+                                <i class="fa fa-home"></i>
+                            </div>
+                            <h3>Daily rental</h3>
+                        </a>
+                    </div>
+                    <!-- 5 -->
+                    <div class="categories">
+                        <a href="" class="categories-link ">
+                            <div class="categories-items">
+                                <i class="fa fa-building-o"></i>
+                            </div>
+                            <h3>New buildings</h3>
+                        </a>
+                    </div>
+                    <!-- 6 -->
+                    <div class="categories">
+                        <a href="" class="categories-link ">
+                            <div class="categories-items">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </div>
+                            <h3>More</h3>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- categories end -->
+
+
+            <!-- BUY SELL RENT -->
+
+            <section class="rent-section">
+
+                <div class="row rent-continer">
+                    <div class="col-lg-4 colg-md-6 rent-items">
+                        <img src="images/buy.svg" alt="buy a property">
+                        <div class="rent-text">
+                            <h2>Buy Property</h2>
+                            <p>Blandit lorem dictum in velit. Et nisi at faucibus mauris pretium enim. Risus sapien
+                                nisi
+                                aliquam egestas leo dignissim.</p>
+                        </div>
+                        <a href=""><button>Find a home</button></a>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col-lg-4 colg-md-6 rent-items">
+                        <img src="images/sell.svg" alt="buy a property">
+                        <div class="rent-text">
+                            <h2>Sell a property</h2>
+                            <p>Amet, cras orci justo, tortor nisl aliquet. Enim tincidunt tellus nunc, nulla arcu
+                                posuere quis. Velit turpis orci venenatis.</p>
+                        </div>
+                        <a href=""><button>Find a home</button></a>
+                    </div>
+                    <!-- 3 -->
+                    <div class="col-lg-4 colg-md-6 rent-items">
+                        <img src="images/rent.svg" alt="buy a property">
+                        <div class="rent-text">
+                            <h2>Rent a property</h2>
+                            <p>Sed sed aliquet sed id purus malesuada congue viverra. Habitant quis lacus, volutpat
+                                natoque ipsum iaculis cursus.</p>
+                        </div>
+                        <a href=""><button>Find a home</button></a>
+                    </div>
+                </div>
+
+
+
+            </section>
+            <!-- BUY SELL RENT end -->
+
+            <!-- card carusel -->
+            <section>
+                <div class="title-name">
+                    <h2>Top offers</h2>
+                </div>
+                <div id="carouselExample" class="carousel carousel-dark slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card-wrapper">
+                                <!-- card 1 -->
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="/images/01.jpg" alt="...">
+                                        <div class="card-tag">
+                                            <span class="tags">Verified</span>
+                                            <span class="tags"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-font-size">
+                                            <h4 class="mb-1 fs-xs fw-normal text-uppercase text-danger si-1">For
+                                                sale
+                                            </h4>
+                                            <h3 class="h6 mb-2 fs-base si-2"><a class="nav-link stretched-link si-3"
+                                                    href="">Cottage |
+                                                    120
+                                                    sq.m</a></h3>
+                                            <p class="mb-2 fs-sm text-muted si-4">42 Broadway New York, NY 10004</p>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <i class="fa fa-money icon-items"></i>$184,000
+                                        </div>
+                                    </div>
+                                    <div class="card-line"></div>
+                                    <div clas="icon-cards ">
+                                        <div class="icon-container">
+                                            <span class="icon-items"><i class="fa fa-bed"></i></span>
+                                            <span class="icon-items"><i class="fa fa-bath"></i></span>
+                                            <span class="icon-items"><i class="fa fa-car"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card END -->
+                                <!-- card 2 -->
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="/images/01.jpg" alt="...">
+                                        <div class="card-tag">
+                                            <span class="tags">Verified</span>
+                                            <span class="tags"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-font-size">
+                                            <h4 class="mb-1 fs-xs fw-normal text-uppercase text-danger si-1">For
+                                                sale
+                                            </h4>
+                                            <h3 class="h6 mb-2 fs-base si-2"><a class="nav-link stretched-link si-3"
+                                                    href="">Cottage |
+                                                    120
+                                                    sq.m</a></h3>
+                                            <p class="mb-2 fs-sm text-muted si-4">42 Broadway New York, NY 10004</p>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <i class="fa fa-money icon-items"></i>$184,000
+                                        </div>
+                                    </div>
+                                    <div class="card-line"></div>
+                                    <div clas="icon-cards ">
+                                        <div class="icon-container">
+                                            <span class="icon-items"><i class="fa fa-bed"></i></span>
+                                            <span class="icon-items"><i class="fa fa-bath"></i></span>
+                                            <span class="icon-items"><i class="fa fa-car"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card END -->
+                                <!-- card 3 -->
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="/images/01.jpg" alt="...">
+                                        <div class="card-tag">
+                                            <span class="tags">Verified</span>
+                                            <span class="tags"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-font-size">
+                                            <h4 class="mb-1 fs-xs fw-normal text-uppercase text-danger si-1">For
+                                                sale
+                                            </h4>
+                                            <h3 class="h6 mb-2 fs-base si-2"><a class="nav-link stretched-link si-3"
+                                                    href="">Cottage |
+                                                    120
+                                                    sq.m</a></h3>
+                                            <p class="mb-2 fs-sm text-muted si-4">42 Broadway New York, NY 10004</p>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <i class="fa fa-money icon-items"></i>$184,000
+                                        </div>
+                                    </div>
+                                    <div class="card-line"></div>
+                                    <div clas="icon-cards ">
+                                        <div class="icon-container">
+                                            <span class="icon-items"><i class="fa fa-bed"></i></span>
+                                            <span class="icon-items"><i class="fa fa-bath"></i></span>
+                                            <span class="icon-items"><i class="fa fa-car"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card END -->
+                                <!-- card 4 -->
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="/images/01.jpg" alt="...">
+                                        <div class="card-tag">
+                                            <span class="tags">Verified</span>
+                                            <span class="tags"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-font-size">
+                                            <h4 class="mb-1 fs-xs fw-normal text-uppercase text-danger si-1">For
+                                                sale
+                                            </h4>
+                                            <h3 class="h6 mb-2 fs-base si-2"><a class="nav-link stretched-link si-3"
+                                                    href="">Cottage |
+                                                    120
+                                                    sq.m</a></h3>
+                                            <p class="mb-2 fs-sm text-muted si-4">42 Broadway New York, NY 10004</p>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <i class="fa fa-money icon-items"></i>$184,000
+                                        </div>
+                                    </div>
+                                    <div class="card-line"></div>
+                                    <div clas="icon-cards ">
+                                        <div class="icon-container">
+                                            <span class="icon-items"><i class="fa fa-bed"></i></span>
+                                            <span class="icon-items"><i class="fa fa-bath"></i></span>
+                                            <span class="icon-items"><i class="fa fa-car"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card END -->
+
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="carousel-item">
+                            <div class="card-wrapper">
+                                <!-- card 5 -->
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="/images/01.jpg" alt="...">
+                                        <div class="card-tag">
+                                            <span class="tags">Verified</span>
+                                            <span class="tags"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-font-size">
+                                            <h4 class="mb-1 fs-xs fw-normal text-uppercase text-danger si-1">For
+                                                sale
+                                            </h4>
+                                            <h3 class="h6 mb-2 fs-base si-2"><a class="nav-link stretched-link si-3"
+                                                    href="">Cottage |
+                                                    120
+                                                    sq.m</a></h3>
+                                            <p class="mb-2 fs-sm text-muted si-4">42 Broadway New York, NY 10004</p>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <i class="fa fa-money icon-items"></i>$184,000
+                                        </div>
+                                    </div>
+                                    <div class="card-line"></div>
+                                    <div clas="icon-cards ">
+                                        <div class="icon-container">
+                                            <span class="icon-items"><i class="fa fa-bed"></i></span>
+                                            <span class="icon-items"><i class="fa fa-bath"></i></span>
+                                            <span class="icon-items"><i class="fa fa-car"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card END -->
+
+                                <!-- card 6 -->
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="/images/01.jpg" alt="...">
+                                        <div class="card-tag">
+                                            <span class="tags">Verified</span>
+                                            <span class="tags"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-font-size">
+                                            <h4 class="mb-1 fs-xs fw-normal text-uppercase text-danger si-1">For
+                                                sale
+                                            </h4>
+                                            <h3 class="h6 mb-2 fs-base si-2"><a class="nav-link stretched-link si-3"
+                                                    href="">Cottage |
+                                                    120
+                                                    sq.m</a></h3>
+                                            <p class="mb-2 fs-sm text-muted si-4">42 Broadway New York, NY 10004</p>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <i class="fa fa-money icon-items"></i>$184,000
+                                        </div>
+                                    </div>
+                                    <div class="card-line"></div>
+                                    <div clas="icon-cards ">
+                                        <div class="icon-container">
+                                            <span class="icon-items"><i class="fa fa-bed"></i></span>
+                                            <span class="icon-items"><i class="fa fa-bath"></i></span>
+                                            <span class="icon-items"><i class="fa fa-car"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card END -->
+
+                                <!-- card 7 -->
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="/images/01.jpg" alt="...">
+                                        <div class="card-tag">
+                                            <span class="tags">Verified</span>
+                                            <span class="tags"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-font-size">
+                                            <h4 class="mb-1 fs-xs fw-normal text-uppercase text-danger si-1">For
+                                                sale
+                                            </h4>
+                                            <h3 class="h6 mb-2 fs-base si-2"><a class="nav-link stretched-link si-3"
+                                                    href="">Cottage |
+                                                    120
+                                                    sq.m</a></h3>
+                                            <p class="mb-2 fs-sm text-muted si-4">42 Broadway New York, NY 10004</p>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <i class="fa fa-money icon-items"></i>$184,000
+                                        </div>
+                                    </div>
+                                    <div class="card-line"></div>
+                                    <div clas="icon-cards ">
+                                        <div class="icon-container">
+                                            <span class="icon-items"><i class="fa fa-bed"></i></span>
+                                            <span class="icon-items"><i class="fa fa-bath"></i></span>
+                                            <span class="icon-items"><i class="fa fa-car"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card END -->
+
+                                <!-- card 8 -->
+                                <div class="card">
+                                    <div class="img-wrapper">
+                                        <img src="/images/01.jpg" alt="...">
+                                        <div class="card-tag">
+                                            <span class="tags">Verified</span>
+                                            <span class="tags"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-font-size">
+                                            <h4 class="mb-1 fs-xs fw-normal text-uppercase text-danger si-1">For
+                                                sale
+                                            </h4>
+                                            <h3 class="h6 mb-2 fs-base si-2"><a class="nav-link stretched-link si-3"
+                                                    href="">Cottage |
+                                                    120
+                                                    sq.m</a></h3>
+                                            <p class="mb-2 fs-sm text-muted si-4">42 Broadway New York, NY 10004</p>
+                                        </div>
+                                        <div class="fw-bold">
+                                            <i class="fa fa-money icon-items"></i>$184,000
+                                        </div>
+                                    </div>
+                                    <div class="card-line"></div>
+                                    <div clas="icon-cards ">
+                                        <div class="icon-container">
+                                            <span class="icon-items"><i class="fa fa-bed"></i></span>
+                                            <span class="icon-items"><i class="fa fa-bath"></i></span>
+                                            <span class="icon-items"><i class="fa fa-car"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card END -->
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon carousel-btn" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next " type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon carousel-btn" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <!-- end carusel -->
+
+
+            <!-- Add today -->
+
+            <section>
+
+                <div class="add-today-container">
+                    <div class="Add-continer">
+                        <h2>Added today</h2>
+                        <ul class="add-list">
+                            <li class="add-items"><a href="" class="add-links">Apartments</a></li>
+                            <li class="add-items"><a href="" class="add-links">Houses</a></li>
+                            <li class="add-items"><a href="" class="add-links">Rooms</a></li>
+                            <li class="add-items"><a href="" class="add-links">Commercial</a></li>
+                        </ul>
+                        <span class="add-items">
+                            <a class="arrow" href="">View <i class="fa fa-long-arrow-right"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="row img-size">
+                        <div class="col-lg-6 add-img-warp">
+                            <img src="/images/9.jpg" alt="" width="100%">
+
+                            <div class="add-text  right-img-text">
+                                <div class="txt-items">
+                                    <h6>For Rental</h6>
+                                    <h3>Luxury Rental Villa</h3>
+                                    <p>
+                                        <i class="fa fa-map-marker loction-fav"></i>
+                                        118-11 Sutphin Blvd Jamaica, NY 11434
+                                    </p>
+                                </div>
+                                <div class="add-btn">
+                                    <a href="" class="add-btn-links">
+                                        From $3,850 <button class="add-icon">
+                                            <i class="fa fa-heart-o"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 left-img-container">
+                            <div class="add-img-warp left-img left-1">
+                                <img src="/images/15.jpg" alt="" width="100%">
+                                <div class="add-text left-text-img">
+                                    <div class="txt-items">
+                                        <h6>For Rental</h6>
+                                        <h3>Luxury Rental Villa</h3>
+                                        <p>
+                                            <i class="fa fa-map-marker loction-fav"></i>
+                                            118-11 Sutphin Blvd Jamaica, NY 11434
+                                        </p>
+                                    </div>
+                                    <div class="add-btn">
+                                        <a href="" class="add-btn-links">
+                                            From $3,850 <button class="add-icon">
+                                                <i class="fa fa-heart-o"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add-img-warp left-img left-2">
+                                <img src="/images/10.jpg" alt="" width="100%">
+                                <div class="add-text left-text-img">
+                                    <div class="txt-items">
+                                        <h6>For Rental</h6>
+                                        <h3>Luxury Rental Villa</h3>
+                                        <p>
+                                            <i class="fa fa-map-marker loction-fav"></i>
+                                            118-11 Sutphin Blvd Jamaica, NY 11434
+                                        </p>
+                                    </div>
+                                    <div class="add-btn">
+                                        <a href="" class="add-btn-links">
+                                            From $3,850 <button class="add-icon">
+                                                <i class="fa fa-heart-o"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!--Add today end -->
+
+
+            <!-- Сalculate the cost of your property -->
+
+            <section class="calculator-section">
+                <div class="">
+                    <div class="row">
+                        <div class="col-lg-6  col-sm-12">
+                            <div class="cal-img">
+                                <img src="images/calculator.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6  col-sm-12 cal-text-container">
+                            <div class="cal-text">
+                                <h2>Сalculate the cost of your property</h2>
+                                <p>Real estate appraisal is a procedure that allows you to determine the average
+                                    market
+                                    value of real estate (apartment, house, land, etc.).Сalculate the cost of your
+                                    property with our new Calculation Service.</p>
+
+                                <button class="calu-btn">
+                                    <a href="" class="calu-link">
+                                        <i class="fa fa-calculator"></i>calculator
+                                    </a>
+                                </button>
+                                </v>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- end calculator  -->
+
+            <!-- Search property by city Carousel -->
+            <section>
+                <div class="title-name">
+                    <h2>Serach property by city</h2>
+                </div>
+                <div id="carouselExample" class="carousel carousel-dark slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card-wrapper">
+                                <!-- card 1 -->
+                                <div class="card overlay">
+                                    <div class="img-wrapper">
+                                        <img src="/images/new-york.jpg" alt="...">
+                                    </div>
+                                    <!-- 1.1 -->
+                                    <div class=" progres-container">
+                                        <div class="progres">
+                                            <div class="progress-text">
+                                                <h4>
+                                                    <img src="/images/wallet-fill.svg" alt="">
+                                                    Property for sale
+                                                </h4>
+                                            </div>
+
+                                            <div class="progress-items">
+                                                <div class="progres-bar">
+                                                    <div class="progress-border">
+                                                        <div class="progress-color">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="progres-value">893</span>
+                                            </div>
+
+                                        </div>
+                                        <!--  -->
+                                        <div class="progres">
+                                            <div class="progress-text">
+                                                <h4>
+                                                    <img src="/images/home-4-fill.svg" alt="">
+                                                    Property for rent
+                                                </h4>
+                                            </div>
+
+                                            <div class="progress-items">
+                                                <div class="progres-bar">
+                                                    <div class="progress-border">
+                                                        <div class="progress-color green-colr">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="progres-value">3756</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- end -->
+                                    <div class="card-body overlay-txt">
+                                        <h3>New York</h3>
+                                    </div>
+
+                                </div>
+                                <!-- card END -->
+                                <!-- card 2 -->
+                                <div class="card overlay">
+                                    <div class="img-wrapper">
+                                        <img src="/images/chicago.jpg" alt="...">
+                                    </div>
+                                    <!-- -->
+                                    <div class=" progres-container">
+                                        <div class="progres">
+                                            <div class="progress-text">
+                                                <h4>
+                                                    <img src="/images/wallet-fill.svg" alt="">
+                                                    Property for sale
+                                                </h4>
+                                            </div>
+
+                                            <div class="progress-items">
+                                                <div class="progres-bar">
+                                                    <div class="progress-border">
+                                                        <div class="progress-color">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="progres-value">893</span>
+                                            </div>
+
+                                        </div>
+                                        <!--  -->
+                                        <div class="progres">
+                                            <div class="progress-text">
+                                                <h4>
+                                                    <img src="/images/home-4-fill.svg" alt="">
+                                                    Property for rent
+                                                </h4>
+                                            </div>
+
+                                            <div class="progress-items">
+                                                <div class="progres-bar">
+                                                    <div class="progress-border">
+                                                        <div class="progress-color green-colr">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="progres-value">3756</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- end -->
+                                    <div class="card-body overlay-txt">
+                                        <h3>chicago</h3>
+                                    </div>
+
+                                </div>
+                                <!-- card END -->
+                                <!-- card 3 -->
+                                <div class="card overlay">
+                                    <div class="img-wrapper">
+                                        <img src="/images/los-angeles.jpg" alt="...">
+                                    </div>
+                                    <!-- -->
+                                    <div class=" progres-container">
+                                        <div class="progres">
+                                            <div class="progress-text">
+                                                <h4>
+                                                    <img src="/images/wallet-fill.svg" alt="">
+                                                    Property for sale
+                                                </h4>
+                                            </div>
+
+                                            <div class="progress-items">
+                                                <div class="progres-bar">
+                                                    <div class="progress-border">
+                                                        <div class="progress-color">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="progres-value">893</span>
+                                            </div>
+
+                                        </div>
+                                        <!--  -->
+                                        <div class="progres">
+                                            <div class="progress-text">
+                                                <h4>
+                                                    <img src="/images/home-4-fill.svg" alt="">
+                                                    Property for rent
+                                                </h4>
+                                            </div>
+
+                                            <div class="progress-items">
+                                                <div class="progres-bar">
+                                                    <div class="progress-border">
+                                                        <div class="progress-color green-colr">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="progres-value">3756</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- end -->
+                                    <div class="card-body overlay-txt">
+                                        <h3>los-angeles</h3>
+                                    </div>
+
+                                </div>
+                                <!-- card END -->
+                                <!-- card 4 -->
+                                <div class="card overlay">
+                                    <div class="img-wrapper">
+                                        <img src="/images/san-diego.jpg" alt="...">
+                                    </div>
+                                    <!-- 1.1 -->
+                                    <div class=" progres-container">
+                                        <div class="progres">
+                                            <div class="progress-text">
+                                                <h4>
+                                                    <img src="/images/wallet-fill.svg" alt="">
+                                                    Property for sale
+                                                </h4>
+                                            </div>
+
+                                            <div class="progress-items">
+                                                <div class="progres-bar">
+                                                    <div class="progress-border">
+                                                        <div class="progress-color">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="progres-value">893</span>
+                                            </div>
+
+                                        </div>
+                                        <!--  -->
+                                        <div class="progres">
+                                            <div class="progress-text">
+                                                <h4>
+                                                    <img src="/images/home-4-fill.svg" alt="">
+                                                    Property for rent
+                                                </h4>
+                                            </div>
+
+                                            <div class="progress-items">
+                                                <div class="progres-bar">
+                                                    <div class="progress-border">
+                                                        <div class="progress-color green-colr">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="progres-value">3756</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- end -->
+                                    <div class="card-body overlay-txt">
+                                        <h3>san-diego</h3>
+                                    </div>
+
+                                </div>
+                                <!-- card END -->
+                            </div>
+                        </div>
+                        <!--  -->
+
+                        <!--  -->
+
+                    </div>
+
+                    <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon carousel-btn" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next " type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon carousel-btn" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <!-- end carusel -->
+
+
+            <!-- Our partners -->
+            <section>
+                <div class=" partner-container title-name">
+                    <h2>Our partners</h2>
+                    <div class="row">
+                        <!-- 1 -->
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="partner-logo">
+                                <img class="color-log" src="/images/01_color.svg" alt="CHASE">
+                                <!-- <img class="gray-log" src="images/01_gray.svg" alt="CHASE logo"> -->
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="partner-logo">
+                                <img class="color-log" src="/images/02_color.svg" alt="CHASE">
+                                <!-- <img class="gray-log" src="images/02_gray.svg" alt="CHASE logo"> -->
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="partner-logo">
+                                <img class="color-log" src="/images/03_color.svg" alt="CHASE">
+                                <!-- <img class="gray-log" src="images/03_gray.svg" alt="CHASE logo"> -->
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="partner-logo">
+                                <img class="color-log" src="/images/04_color.svg" alt="CHASE">
+                                <!-- <img class="gray-log" src="images/04_gray.svg" alt="CHASE logo"> -->
+                            </div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="partner-logo">
+                                <img class="color-log" src="/images/05_color.svg" alt="CHASE">
+                                <!-- <img class="gray-log" src="images/05_gray.svg" alt="CHASE logo"> -->
+                            </div>
+                        </div>
+                        <!-- 6 -->
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="partner-logo">
+                                <img class="color-log" src="/images/06_color.svg" alt="CHASE">
+                                <!-- <img  class="gray-log" src="images/06_gray.svg" alt="CHASE logo"> -->
+                            </div>
+                        </div>
+                        <!-- end -->
+                    </div>
+                </div>
+            </section>
+            <!-- end -->
+
+            <!-- Top real estate agents -->
+            <section class="agent-section">
+                <div class=" agent-container">
+                    <div class="row">
+                        <h1 class="agent-top-space">Top real estate agents</h1>
+                        <div class="col-lg-4">
+                            <div class="agent-el">
+                                <img class="agent-img" src="images/01-agent.jpg" alt="Agent">
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="col-lg-4">
+                            <div class="agent-el">
+                                <img class="agent-img" src="images/02-agent.jpg" alt="Agent">
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="col-lg-4 agent-text-container">
+                            <div class="agent-text">
+                                <blockquote class="blockquote card-body">
+                                    <h3 class="txt-h3">"I will select the best accommodation for you"</h3>
+                                    <p class="text-muted">Amet libero morbi venenatis ut est. Iaculis leo ultricies
+                                        nunc
+                                        id ante adipiscing. Vel metus odio at faucibus ac. Neque id placerat et id
+                                        ut.
+                                        Scelerisque eu mi ullamcorper sit urna. Est volutpat dignissim nec.</p>
+                                    <div class="agent-links">
+                                        <div class="agent-items">
+                                            <a class="" href="#">
+                                                <h6 class="mb-0">Floyd Miles</h6>
+                                                <div class="text-muted fw-normal  mb-3">Imperial Property Group
+                                                    Agent
+                                                </div>
+                                            </a>
+                                            <div class="agent-social">
+                                                <i class="fa fa-facebook agent-icon"></i>
+                                                <i class="fa fa-twitter agent-icon"></i>
+                                                <i class="fa fa-instagram agent-icon"></i>
+                                            </div>
+                                        </div>
+                                        <div class="reviews">
+                                            <div class="reviews-items">
+                                                <i class="fa fa-star reviews-color"></i>
+                                                <i class="fa fa-star reviews-color"></i>
+                                                <i class="fa fa-star reviews-color"></i>
+                                                <i class="fa fa-star reviews-color"></i>
+                                                <i class="fa fa-star reviews-color"></i>
+                                            </div>
+                                            <div class="review-text">
+                                                <h6>Review</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class=" footer-container">
+            <div class="row footers">
+                <div class="col-lg-8 footer-flex">
+                    <div class="footer-contact footer-aligment">
+                        <div class="footer-log">
+                            <img src="images/logo-dark.svg" alt="">
+                        </div>
+                        <div class="contect-items">
+                            <a href="" class="nav-links">
+                                <i class="fa fa-envelope"></i>
+                                <span>example@email.com</span>
+                            </a>
+                            <br>
+                            <a href="" class="nav-links">
+                                <i class="fa fa-mobile"></i>
+                                <span>123-456-789</span>
+                            </a>
+
+                            <div class="agent-social footer-icons">
+                                <i class="fa fa-facebook agent-icon"></i>
+                                <i class="fa fa-twitter agent-icon"></i>
+                                <i class="fa fa-whatsapp agent-icon"></i>
+                                <i class="fa fa-instagram agent-icon"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 2 -->
+                    <div class="footer-links">
+                        <div class="links-heading footer-aligment">
+                            <h4 class="text-uppercase text-danger ft-mar">Quick Links</h4>
+                            <ul class=" link-list">
+                                <li class="nav-items links-items"><a class="links nav-links" href="">Buy a
+                                        property</a></li>
+                                <li class="nav-items links-items"><a class="links nav-links" href="">Sell a
+                                        property</a></li>
+                                <li class="nav-items links-items"><a class="links nav-links" href="">Rent a
+                                        property</a></li>
+                                <li class="nav-items links-items"><a class="links nav-links" href="">Calculate
+                                        your property</a></li>
+                                <li class="nav-items links-items"><a class="links nav-links" href="">Top
+                                        ffers</a></li>
+                                <li class="nav-items inks-items"><a class="links nav-links" href="">Top
+                                        cities</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="footer-links about-footer">
+                        <div class="links-heading footer-aligment">
+                            <h4 class="text-uppercase text-danger ft-mar">About</h4>
+                            <ul class="link-list">
+                                <li class="nav-items links-items"><a class="links nav-links " href="">About
+                                        Us</a></li>
+                                <li class="nav-items links-items"><a class="links nav-links " href="">Our
+                                        agent</a></li>
+                                <li class="nav-items links-items"><a class="links nav-links " href="">Help &
+                                        support</a></li>
+                                <li class="nav-items links-items"><a class="links nav-links " href="">Contacts</a></li>
+                                <li class="nav-items links-items"><a class="links nav-links " href="">News</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end -->
+                </div>
+                <!-- end -->
+
+                <div class="col-lg-4">
+                    <div class="links-heading recent-post">
+                        <h4>Recent Posts</h4>
+                        <div class="post-container">
+                            <div class="post-img">
+                                <img src="images/post-1.jpg" alt="">
+                            </div>
+                            <div class="post-text">
+                                <h6>HOME IMPROVEMENT</h6>
+                                <h5>
+                                    <a href="" class="nav-links">Your Guide to a Smart Apartment Searching</a>
+                                </h5>
+
+                                <p>Mi justo, varius vitae cursus ipsum sem massa amet pellentesque. Ipsum enim
+                                    sit nulla ridiculus semper nam...</p>
+                                <div class="date-comment">
+                                    <a href="" class="nav-links date-coment-items">
+                                        <i class="fa fa-calendar"></i>
+                                        <span>Dec 4</span>
+                                    </a>
+                                    <a href="" class="nav-links date-coment-items">
+                                        <i class="fa fa-comments"></i>
+                                        <span>2 comments</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr>
+
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="links-heading recent-post">
+                        <div class="post-container">
+                            <div class="post-img">
+                                <img src="images/post-2.jpg" alt="">
+                            </div>
+                            <div class="post-text">
+                                <h6>Tips & advice</h6>
+                                <h5>
+                                    <a href="" class="nav-links">Top 10 Ways to Refresh Your Space</a>
+                                </h5>
+
+                                <p>Volutpat, orci, vitae arcu feugiat vestibulum ultricies nisi, aenean eget.
+                                    Vitae enim, tellus tempor consequat mi vitae...</p>
+                                <div class="date-comment">
+                                    <a href="" class="nav-links date-coment-items">
+                                        <i class="fa fa-calendar"></i>
+                                        <span>Nov 24</span>
+                                    </a>
+                                    <a href="" class="nav-links date-coment-items">
+                                        <i class="fa fa-comments"></i>
+                                        <span>no comments</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr>
+
+                        </div>
+                    </div>
+                    <!-- end -->
+                </div>
+
+            </div>
+            <div class="container  container-fluid download-app">
+                <div class="row app-container">
+                    <div class="col-lg-4">
+                        <div class="app-img">
+                            <img src="images/mobile.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 app-items-container">
+                        <div class="app-items footer-aligment">
+                            <div class="app-text">
+                                <h2>Download Our App</h2>
+                                <p>Find everything you need for buying, selling & renting property in our new
+                                    Finder App!</p>
+                            </div>
+
+                            <div class="app-btn footer-aligment">
+                                <button class="btn-items">
+                                    <div class="ios-icon">
+                                        <i class="fa fa-apple ios"></i>
+                                    </div>
+                                    <div class="ios-container">
+                                        <a class="ios-name" href="">
+                                            Available on the <br>
+                                            App Store
+                                        </a>
+                                    </div>
+                                </button>
+                                <button class="btn-items">
+                                    <div class="ios-icon">
+                                        <i class="fa fa-android ios"></i>
+                                    </div>
+                                    <div class="ios-container">
+                                        <a class="ios-name" href="">
+                                            Get It On <br>
+                                            Google Play
+                                        </a>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/df88ca4b67.js" crossorigin="anonymous"></script>
+    <!-- bootstrap link JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- end -->
+</body>
+
+</html>
