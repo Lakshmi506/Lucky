@@ -2,18 +2,57 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
+
 body{
     font-family: "Source Sans 3", sans-serif;
 }
-.nav-link{
-    color: black;
-    font-weight: 600;
+nav{
+    width: 100%;
+    height: 75px;
+    background-color: #3f4c4bdc;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: fixed;
+    z-index: 1;
 }
-.navbar-brand{
-    color: black;
-    font-weight: 700;
+nav .container {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
 }
+nav .container p{
+    float: left;
+    color: black;
+    text-transform: uppercase;    
+}
+img{
+    border-style:solid;
+    background-color: #E3E3E3;
+    border-radius: 30px;
+    box-shadow: #9d9494;
+    height: 70px;
+    width: 100px;
+    float: left;
+    border-color: black;
+}
+nav ul{
+    float: right;     
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    font-weight: bold;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 32px;
+}
+
 .main{
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./images/hall.jpg);
     background-size: 100% 100%;
@@ -93,8 +132,73 @@ body{
     width: 200px;
     outline: none;
     border: none;
-    display: inline-block;
-    
+    display: inline-block;   
+}
+.hi-slide{
+    position: relative;
+    width: 754px;
+    height: 292px;
+    border-radius: 50px;
+    margin: 115px auto 0;
+}
+.hi-slide .hi-next,
+.hi-slide .hi-prev{
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: all 0.7s;
+    font-size: 20px;
+    font-weight: bold;
+} 
+.hi-slide .hi-next:hover,
+.hi-slide .hi-prev:hover{
+    opacity: 1;
+    background-color: white;
+}
+.hi-slide .hi-prev{left: 59px;}
+.hi-slide .hi-prev::before{
+    content: '<';
+}
+.hi-slide .hi-next{
+    right: -59px;
+}
+.hi-slide .hi-next::before{
+    content: '>';
+}
+.hi-slide > ul{
+    list-style: none;
+    position: relative;
+    width: 754px;
+    height: 292px;
+    margin: 0;
+    padding: 0;
+}
+.hi-slide > ul >li{
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    left: 377px;
+    top: 147px;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 3px solid white;
+    cursor: pointer;
+    background-color: #333;
+}
+.hi-slide > ul > li > img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
 }
 footer{
     background-color: black;

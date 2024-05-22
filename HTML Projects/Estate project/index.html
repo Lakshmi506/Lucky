@@ -12,44 +12,30 @@
     <script src="https://kit.fontawesome.com/c26cd2166c.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav>
           <div class="container">
-          <a class="navbar-brand" href="#">Dream Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item" active>
-                <a class="nav-link pr-5" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link pr-5" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link pr-5" href="#">Disabled</a>
-              </li>
-            </ul>
+          <img src="./images/logo1.jpg" alt="logo" >
           </div>
-          </div>
+          <ul>
+            <li><a href="./homePage.html">Home</a></li>
+            <li><a href="./AboutPage.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>            
       </nav>
 
       <section class="main py-5">
         <div class="container py-5">
             <div class="row py-5">
-                <div class="col-lg-10 py-5 mx-auto">
+                <div class="col-lg-10 py-4 mx-auto">
                     <h1 class="text-white text-center">Find your Dream Home</h1>
-                    <p class="text-white text-center">WE offer the Best Real Estate Deals</p>
+                    <p class="text-white text-center">We offer the Best Real Estate Deals</p>
                     <div class="card mt-4">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-3">
                                     <span>Property for Rent</span>
                                     <select class="mt-2" name="" id="">
-                                        <option value="">-Awesome</option>
+                                        <option value="">-Select-</option>
                                         <option value="">1bhk</option>
                                         <option value="">2bhk</option>
                                         <option value="">3bhk</option>
@@ -57,25 +43,27 @@
                                     </select>
                                 </div>
                                 <div class="col-lg-3">
-                                    <span>Property for Rent</span>
+                                    <span>Property Type</span>
                                     <select class="mt-2" name="" id="">
-                                        <option value="">-Awesome</option>
-                                        <option value="">1bhk</option>
-                                        <option value="">2bhk</option>
-                                        <option value="">3bhk</option>
+                                        <option value="">-Select-</option>
+                                        <option value="">Appartment</option>
+                                        <option value="">Villa</option>
+                                        <option value="">single House</option>
                                     </select>
                                 </div>
                                 <div class="col-lg-3">
-                                    <span>Property for Rent</span>
+                                    <span>Property Status</span>
                                     <select class="mt-2" name="" id="">
-                                        <option value="">-Awesome</option>
-                                        <option value="">1bhk</option>
-                                        <option value="">2bhk</option>
-                                        <option value="">3bhk</option>
+                                        <option value="">-Select-</option>
+                                        <option value="">Available</option>
+                                        <option value="">Sold Out</option>
+                                        <option value="">Rent Purpose</option>
                                     </select>
                                 </div>
                                 <div class="col-lg-3">
+                                    <a href="https://www.bing.com/homes/2bhk-3bhk-flat-for-sale?form=000074">
                                     <input type="button" class="btn1" value="search">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -189,6 +177,28 @@
       </section>
 
 
+      <div class="slide hi-slide">
+        <div class="hi-prev"></div>
+        <div class="hi-next"></div>
+        <ul>
+            <li><img src="./images/s1.jpg"></li>
+            <li><img src="./images/s2.jpg"></li>
+            <li><img src="./images/s3.jpg"></li>
+            <li><img src="./images/s5.jpg"></li>
+            <li><img src="./images/s6.jpg"></li>
+        </ul>
+      </div>
+      <script src=
+“https://code.jquery.com/jquery-3.7.1.min.js” 
+             integrity=
+“sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=” 
+            crossorigin=”anonymous”>
+        </script>
+        <script src="js/jquery.hislide.js">
+            $('.slide').hislide();
+        </script>
+
+
 
       <section class="contact">
         <div class="container py-5">
@@ -233,7 +243,7 @@
         <div class="container pt-3">
             <div class="row">
                 <div class="col-lg-6 text-center">
-                    <p class="text-center">Real Estate @copyright 2019 Theme- All Rights Reserved</p>
+                    <p class="text-center">Real Estate @copyright 2024 Theme- All Rights Reserved</p>
                 </div>
                 <div class="offset-3 col-lg-3">
                     <span><i class="fab fa-facebook"></i></span>
